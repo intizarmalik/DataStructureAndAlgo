@@ -44,7 +44,7 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         BinarySearch obj = new BinarySearch();
-        int binaryArray[] = {1, 2, 5, 8, 9, 13};
+         int binaryArray[] = {1, 2, 5, 8, 9, 13};
        int result = obj.binarySearch(binaryArray,9);
        System.out.println("Using iteration method");
         if (result == -1)
