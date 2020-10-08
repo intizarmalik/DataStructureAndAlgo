@@ -13,6 +13,7 @@ package Searching;
 
 public class LinearSearch {
 
+//    O(n)
     int linearSearch(int arr[], int x) {
         for(int i=0;i<arr.length;i++) {
             if(arr[i]==x)

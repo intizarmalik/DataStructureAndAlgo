@@ -5,6 +5,8 @@
 //              f=m+1; //move to f at index m+1;
 //           else
 //                l=m-1; // move to index l at m-1;
+//Time Complexity: If elements are uniformly distributed, then O (log log n)). In worst case it can take upto O(n).
+//        Auxiliary Space: O(1)
 
 package Searching;
 
@@ -14,7 +16,7 @@ public class BinarySearch {
 
     int binarySearch(int arr[],int x) {
         int f=0, l=arr.length-1;
-
+//       O (log log n))
         while (f<=l) {
             int m=f+(l-f)/2;
 
@@ -27,7 +29,7 @@ public class BinarySearch {
         }
         return -1;
     }
-
+//    O(Log n)
     int recursiveBinarySearch(int arr[],int f, int l, int x) {
         if(f<=l) {
             int m = f+(l-f)/2;

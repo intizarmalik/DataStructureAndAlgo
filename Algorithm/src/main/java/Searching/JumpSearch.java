@@ -16,7 +16,7 @@ public class JumpSearch {
         int jumpSize= (int)Math.floor(Math.sqrt(n));
 
         int prev=0;
-        // Finding the block where element is present
+        // Finding the block where element is present O(√ n)
         while (array[Math.min(jumpSize,n)-1]<x) {
             prev = jumpSize;
             jumpSize += (int)Math.floor(Math.sqrt(n));
